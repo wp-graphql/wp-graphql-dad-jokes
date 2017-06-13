@@ -10,3 +10,5 @@ To query for a dad joke:
   dadJoke
 }
 ```
+
+<img src="https://github.com/wp-graphql/wp-graphql-dad-jokes/blob/master/img/graphiql-screenshot.png?raw=true" alt="GraphiQL dadJoke query">
