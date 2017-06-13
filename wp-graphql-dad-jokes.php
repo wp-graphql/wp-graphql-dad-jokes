@@ -26,7 +26,7 @@ function wp_graphql_dad_jokes_root_query( $fields ) {
 			$get_dad_joke = wp_remote_get('https://icanhazdadjoke.com/', [
 				'headers' => [
 					'Accept' => 'application/json',
-					'User-Agent' => esc_html( get_bloginfo( 'name' ) ),
+					'User-Agent' => 'WPGraphQL Dad Jokes (https://github.com/wp-graphql/wp-graphql-dad-jokes)',
 				],
 			] );
 			$body = ! empty( $get_dad_joke['body'] ) ?  json_decode( $get_dad_joke['body'] ) : null;
