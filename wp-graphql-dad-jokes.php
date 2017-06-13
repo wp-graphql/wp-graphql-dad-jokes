@@ -7,9 +7,9 @@
  * Author URI:      http://graphql.com
  * Text Domain:     wp-graphql-dad-jokes
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.01
  *
- * @package         Wp_Graphql_Dad_Jokes
+ * @package         WP_Graphql_Dad_Jokes
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -26,6 +26,7 @@ function wp_graphql_dad_jokes_root_query( $fields ) {
 			$get_dad_joke = wp_remote_get('https://icanhazdadjoke.com/', [
 				'headers' => [
 					'Accept' => 'application/json',
+					'User-Agent' => esc_html( get_bloginfo( 'name' ) ),
 				],
 			] );
 			$body = ! empty( $get_dad_joke['body'] ) ?  json_decode( $get_dad_joke['body'] ) : null;
