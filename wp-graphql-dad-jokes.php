@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     WPGraphql Dad Jokes
+ * Plugin Name:     WPGraphQL Dad Jokes
  * Plugin URI:      http://github.com/wp-graphql/wp-graphql-dad-jokes
  * Description:     A WPGraphQL Extension that adds a root query to the GraphQL schema that returns a random Dad Joke from icanhazdadjokes.com
  * Author:          WPGraphQL, Jason Bahl
